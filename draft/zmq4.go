@@ -871,6 +871,7 @@ type Socket struct {
 	ctx    *Context
 	opened bool
 	err    error
+	pipe   chan *ZCMessage
 }
 
 /*

@@ -848,6 +848,10 @@ type Socket struct {
 	ctx    *Context
 	opened bool
 	err    error
+
+	// Zero Copy
+	zcpipe chan []byte
+	zcID   unsafe.Pointer
 }
 
 /*
